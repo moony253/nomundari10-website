@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomundari</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"><script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <STYLE TYPE="text/css">
+    body {font-family: Arial, sans-serif;margin: 0;padding: 0;background-color: #f4f4f4;}
+    header{min-height: 0;width: 100%; position: relative;}
+    nav {padding: 1px;background-color: rgb(48, 48, 47);display: flex;justify-content: space-between; align-items: center;}
+    nav img{width: 110px; height: 110px;border-radius: 50%;}
+    nav img:hover{background: rgb(235, 228, 228);}
+    .nav-links{flex: 1;text-align: center;}
+    .nav-links ul li {list-style: none;display: inline-block;padding: 0px 19px;position:relative;}
+    .nav-links ul li a{color: #ffffff;text-decoration: none;font-size: 19px;}
+    .nav-links ul li::after{content: '';width: 0%;height: 2px;background: #ff0202;display:block ;margin: auto;transition: 0.5s;}
+    .nav-links ul li:hover::after{width: 100%;}
+    @media(max-width:700px){
+        .text-box h1{font-size: 20px;}
+        .nav-links ul li{display: block;}
+        .nav-links{position:absolute; background: rgb(184, 31, 31);height: 100vh;width: 200px;top: 0;right: 0;text-align: left;z-index: 2;}}
+    main {padding: 20px;justify-content: space-between;}
+    .carousel-inner img {width: 100%;height: 100%;}
+    section{padding: 20px;}
+    .clearfix h2{font-size: 50px;position: relative;left: 25px;}
+    .clearfix h2 span{color: rgb(250, 8, 8);line-height: 22px;font-size: 70px;font-family:mv boli  }
+    .clearfix p{width: 600px;text-align: justify;position: relative;left: 40px;bottom: -30px;line-height: 27px;}
+    .clearfix img{position: relative;float: right; width: 400px;height: 400px;left: 10px;right: 120px;}
+    .clearfix::after {content: "";clear: both; display: table;}
+    .ord1{background: rgb(255, 94, 0);position: relative;left: 120px;bottom: 80px;width: 180px;cursor: pointer;padding: 10px 15px;border: 1px solid #e20d0d;}
+    .ord1 a{color:rgb(255, 255, 255);margin-right: 50px; text-decoration: none;}
+    .ord1:hover{background: #d44c4c;}
+    .container { display: flex;justify-content: space-between; padding: 20px;}
+    #menu-list { flex: 1; padding: 20px; }
+    #menu-list h2{color: #e20d0d;}
+    #menu-list .menu-item {border: 1px solid #e20d0d; border-radius: 5px; margin-bottom: 10px; padding: 15px; background-color: rgb(247, 247, 247); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);cursor: pointer; }
+    #menu-list .menu-item:hover{background: rgb(243, 148, 40)}
+    #order-section {flex: 1; padding: 20px; }
+    #user-order { margin-bottom: 20px;}
+    #user-order form {display: flex; flex-direction: column;}
+    #user-order label {margin-bottom: 10px;}
+    #user-review { margin-bottom: 20px; color: #333;}
+    #user-review .review { border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;padding: 15px; background-color: #fff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+    footer {background-color: #333;color:rgb(255, 255, 255);text-align: center;padding:5px ; bottom: 0;width: 100%;}
+    address{text-align: left;}
+    form { max-width: 1000px; margin: 20px auto; padding: 30px;background-color: white; border-radius: 8px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    h4{padding-left: 55px;}
+</style>
+</head>
+<body>
+    <header><nav>
+            <a href="daria.html"><img src="Logopit_.png">
+            <div class="nav-links">
+            <ul>
+               <li><a href="#Нүүр">Нүүр</a></li> 
+               <li><a href="#Бидний тухай">Бидний тухай</a></li>
+               <li><a href="#Меню">Меню</a></li>
+               <li><a href="#Бүртгүүлэх">Бүртгүүлэх</a></li>
+            </ul></div></nav> 
+    </header>
+    <main>
+        <section id="Нүүр">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li></ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="bay.jpg" alt="baylag burger" width="400" height="200">
+                <div class="carousel-caption">
+                  <h3>Баялаг бургер</h3>
+                  <p>Гайхалтай амтыг нэг дороос!</p></div> </div>
+              <div class="carousel-item">
+                <img src="bur2.jpg" alt="ontsgoi burger" width="400" height="200">
+                <div class="carousel-caption">
+                  <h3>Онцгой бургер</h3>
+                  <p>Thank you, America!</p></div></div>
+              <div class="carousel-item">
+                <img src="bur1.jpg" alt="Cheese burger" width="400" height="200">
+                <div class="carousel-caption">
+                  <h3>Чийзтэй бургер</h3>
+                  <p>We love cheese!</p></div> </div></div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span></a>
+          </div></section>
+    </main>
+    <section id="Бидний тухай">
+        <div class="clearfix">
+            <img class="ab_img" img src="about.png" width="170" height="170">
+        <h2>Get Fresh<span> Food</span><br>in a Easy Way</h2>
+        <p> Манай Вронски бургер 2015 оноос хойш Монголын хэрэглэгчдийн гарт жинхэнэ Америк бургерыг хүргэж байна. Өдөр бүр чанарын
+            стандартыг ханган, шинэхэн бүтээгдэхүүнээр мэргэжлийн тогоочдын бэлтгэсэн бургерыг таны гарт бид хүргэнэ. </p>            
+        </div>
+        <div class="ord1">
+            <a href="#">Дэлгэрэнгүй</a></div> 
+        </section>
+    <section id="Меню">
+    <div class="container">
+        <div id="menu-list">
+            <h2>Меню</h2>
+            <div class="menu-item" onclick="showOrderForm('Баялаг Бургер')"><img src="bay.jpg" width="110px" height="90px"> Баялаг Бургер (15,000₮)</div>
+            <div class="menu-item" onclick="showOrderForm('ББК Баконтой Бургер')"><img src="bacon.jpg" width="110px" height="90px"> ББК Баконтой Бургер (12,000₮)</div>
+            <div class="menu-item" onclick="showOrderForm('Ногоотой Хавчуурга')"><img src="nogoo.jpg" width="110px" height="90px"> Ногоотой Хавчуурга (8,000₮)</div>
+            <div class="menu-item" onclick="showOrderForm('Халуун ногоотой Бургер')"><img src="hot.jpg" width="110px" height="90px"> Халуун ногоотой Бургер (10,000₮)</div>
+            <div class="menu-item" onclick="showOrderForm('Чийзтэй Бургер')"><img src="bur1.jpg" width="110px" height="90px"> Чийзтэй Бургер (12,000₮)</div>
+            <div class="menu-item" onclick="showOrderForm('Тахиа махтай Бургер')"><img src="chickn.jpg" width="110px" height="90px"> Тахиа махтай Бургер (12,000₮)</div>
+        </div>
+        <div id="order-section">
+            <div id="user-order"></div>
+            <div id="user-review"></div>
+        </div></div>
+    <script>
+        function showOrderForm(menuItem) {
+            const orderSection = document.getElementById('user-order');
+            orderSection.innerHTML = `
+                <h2>${menuItem}</h2>
+                <form onsubmit="submitOrder(event, '${menuItem}')">
+                    <label for="quantity">Хэдэн ширхэг:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                    <button type="submit">Захиалах</button> </form> `;}
+
+        function submitOrder(event, menuItem) {
+            event.preventDefault();
+            const quantity = document.getElementById('quantity').value;
+            const orderSection = document.getElementById('user-order');
+            orderSection.innerHTML = `
+                <p> ${quantity}(ш) ${menuItem} захиалга хүлээн авлаа. Баярлалаа!</p>  `; }
+
+        function showReviews() {
+            const reviewSection = document.getElementById('user-review');
+            reviewSection.innerHTML = `
+                <h2>Сэтгэгдэл </h2>
+                <div class="review">
+                    <h3>Амттай бургер</h3>
+                    <p>Үнэхээр амттай бургертэй үнэ ч боломжийн эднээс салахаа байсан ккк</p></div>
+                <div class="review">
+                    <h3>Найрсаг хамт олон</h3>
+                    <p>Орчин нь шинэлэг, найрсаг үйлчилгээтэй амттай бургертай газар байсан, сэтгэгдэл хангалуун.</p></div> 
+                <div class="review">
+                    <h3>Баялаг бургер</h3>
+                    <p>Баялаг бургер хамгийн их таалагдлаа яалтачгүй баялаг орцтой байлаа.</p>
+                </div>`;}
+              showReviews();
+    </script></section>
+    <section id="Бүртгүүлэх">
+        <h4>Бүртгүүлэх:</h4>
+        <form>
+            <label for="name">Нэр:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">И-Майл:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Утас:</label>
+            <input type="tel" id="phone" name="phone" placeholder="1234-5678">
+            <input type="submit"  value="Submit">
+        </form></section>
+    <footer>
+        <address>
+            <table style="width: 50%;">
+                <tr><th>Бидэнтэй холбоо барих бол:</th>
+                <th>Хаяг:</th></tr>
+            <tr>
+            <td>И-Майл: <a href="mailto:info@.com">info@vronsky3.com</a><br>
+            Утас: +958 7475 0056</td>
+            <td>5-р хороо,Хан-Уул дүүрэг<br>
+                Улаанбаатар, Монгол улс</td></tr></table>
+        </address>
+        <p>&copy; 2023 Веб программчлалын хичээлийн хүрээнд бэлтгэсэн болно.</p>
+    </footer>
+</body>
+</html>
